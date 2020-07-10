@@ -1,7 +1,17 @@
-<h1>Home</h1>
+<h1>Welcome to my home Page</h1>
 
-<%= link_to 'About', about_path %> |
+<%= link_to 'About', about_path %>
 
-<p> <%= link_to 'Articles listing', articles_path %> | </p>
+<p> <%= link_to 'Articles listing', articles_path %>  </p>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">Alpha Blog</h1>
+    <p class="lead">This is my first ever Ruby on Rails project. A standard blog project, built using Rails 6 with a scaffold and database. It displays a list of articles and their descriptions and they can be created, updated or delete or just viewed.</p>
+    <hr class="my-4">
+    <p> Components from Bootstrap were used to create this web page. The app will be pushed to GitHub and from there deployed to Heroku. In development, the Rails standard sqlite3 database was used and for Heroku the table was migrated to Postgresql.</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </div>
+</div>
 
 
