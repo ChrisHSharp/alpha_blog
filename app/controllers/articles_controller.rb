@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
+
   def show
   end
 
@@ -28,11 +29,10 @@ class ArticlesController < ApplicationController
   end
 
   def update
-    @article_pathsave = article_path(@article)
 
-    if @article = @article.update(article_params)
+    if  @article.update(article_params)
       flash[:notice] = "Article was updated successfully."
-            redirect_to @article_pathsave
+            redirect_to @article
     else
       render 'edit'
     end
@@ -44,12 +44,15 @@ class ArticlesController < ApplicationController
       @article.destroy
       redirect_to articles_path
   end
-  private
 
-    def set_article
+    private
+
+     def set_article
       @article = Article.find(params[:id])
-    end
-  def article_params
-    params.require(:article).permit(:title, :description)
-  end
-end
+     end
+
+     def article_params
+     params.require(:article).permit(:title, :description)
+     end
+
+     end
