@@ -29,4 +29,4 @@ require("channels")
 
 
 
-import bootstrap
+import "bootstrap"
