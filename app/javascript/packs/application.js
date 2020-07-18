@@ -7,6 +7,9 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+
+import "bootstrap"
+
 //= require jquery
 //= require jquery-ui
 //= require popper
@@ -26,7 +29,6 @@ require_tree .
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-import "bootstrap"
 
 
 
