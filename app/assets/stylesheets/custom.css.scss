@@ -1,5 +1,12 @@
 @import 'bootstrap/dist/css/bootstrap';
+@media (max-width: 767px) { 
+.dropdown.custom:hover .dropdown-menu {
+  visibility: visible;
+  display:block;
+  border-radius:0;
 
+}
+}
 
 .navbar {
   background-color: black !important;
